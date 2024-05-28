@@ -67,7 +67,7 @@ pub fn handler(ctx: Context<VoteV0>, args: VoteArgsV0) -> Result<()> {
   msg!("I started");
   let marker = &mut ctx.accounts.marker;
   marker.proposal = ctx.accounts.proposal.key();
-  marker.bump_seed = ctx.bumps["marker"];
+  marker.bump_seed = ctx.bumps.marker;
   marker.voter = ctx.accounts.voter.key();
   marker.nft_voter = ctx.accounts.nft_voter.key();
   marker.mint = ctx.accounts.mint.key();

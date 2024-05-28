@@ -33,7 +33,7 @@ pub fn handler(
     .accounts
     .resolution_settings
     .set_inner(ResolutionSettingsV0 {
-      bump_seed: ctx.bumps["resolution_settings"],
+      bump_seed: ctx.bumps.resolution_settings,
       settings: args.settings,
       name: args.name,
     });

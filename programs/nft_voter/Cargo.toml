@@ -17,6 +17,6 @@ default = []
 devnet = []
 
 [dependencies]
-anchor-lang = { git = "https://github.com/ChewingGlass/anchor", branch = "bugfix/cpi-polymorphism", features = ["init-if-needed"] }
-anchor-spl = { git = "https://github.com/ChewingGlass/anchor", branch = "bugfix/cpi-polymorphism", features = ["token"] }
+anchor-lang = { version = "0.30.0", features = ["init-if-needed"] }
+anchor-spl = { version = "0.30.0", features = ["token"] }
 proposal = { path = "../proposal", features = ["no-entrypoint", "cpi"] }

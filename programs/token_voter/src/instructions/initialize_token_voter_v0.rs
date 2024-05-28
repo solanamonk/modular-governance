@@ -85,7 +85,7 @@ pub fn handler(
   args: InitializeTokenVoterArgsV0,
 ) -> Result<()> {
   ctx.accounts.token_voter.set_inner(TokenVoterV0 {
-    bump_seed: ctx.bumps["token_voter"],
+    bump_seed: ctx.bumps.token_voter,
     name: args.name,
     authority: args.authority,
     deposit_mint: ctx.accounts.mint.key(),

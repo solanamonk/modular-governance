@@ -37,7 +37,7 @@ pub fn handler(
   ctx.accounts.organization.set_inner(OrganizationV0 {
     name: args.name,
     authority: args.authority,
-    bump_seed: ctx.bumps["organization"],
+    bump_seed: ctx.bumps.organization,
     num_proposals: 0,
     default_proposal_config: args.default_proposal_config,
     proposal_program: args.proposal_program,

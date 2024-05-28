@@ -54,7 +54,7 @@ pub fn handler(
       index: args.index,
       wallet_bump_seed: wallet_bump,
       proposal_configs: args.proposal_configs,
-      bump_seed: ctx.bumps["organization_wallet"],
+      bump_seed: ctx.bumps.organization_wallet,
     });
   Ok(())
 }

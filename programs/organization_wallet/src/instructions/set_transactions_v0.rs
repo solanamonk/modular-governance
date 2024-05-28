@@ -84,7 +84,7 @@ pub fn handler(ctx: Context<SetTransactionsV0>, args: SetTransactionsArgsV0) -> 
       organization_wallet: ctx.accounts.organization_wallet.key(),
       proposal: ctx.accounts.proposal.key(),
       wallet_proposal: ctx.accounts.wallet_proposal.key(),
-      bump_seed: ctx.bumps["choice_transaction"],
+      bump_seed: ctx.bumps.choice_transaction,
       disable_execution_offset: args.disable_execution_offset,
       allow_execution_offset: args.allow_execution_offset,
       transaction: CompiledTransactionV0 {

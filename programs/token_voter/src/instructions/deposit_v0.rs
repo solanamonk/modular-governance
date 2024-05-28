@@ -138,7 +138,7 @@ pub fn handler(ctx: Context<DepositV0>, args: DepositArgsV0) -> Result<()> {
   ctx.accounts.receipt.set_inner(ReceiptV0 {
     token_voter: ctx.accounts.token_voter.key(),
     mint: ctx.accounts.mint.key(),
-    bump_seed: ctx.bumps["receipt"],
+    bump_seed: ctx.bumps.receipt,
     amount: args.amount,
     num_active_votes: 0,
   });

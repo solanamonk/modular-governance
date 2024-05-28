@@ -43,7 +43,7 @@ pub fn handler(
     vote_controller: args.vote_controller,
     state_controller: args.state_controller,
     on_vote_hook: args.on_vote_hook,
-    bump_seed: ctx.bumps["proposal_config"],
+    bump_seed: ctx.bumps.proposal_config,
   });
   Ok(())
 }
